@@ -250,7 +250,7 @@ void printSimilarityMatrix(const vector<unordered_set<unsigned long>>& allHashes
 
 int main(int argc, char* argv[]) {
     // Parse input arguments or hardcode test filenames
-    vector<string> fileNames = {"test1.cpp", "test2.cpp", "test3.cpp", "test4.cpp", "test5.cpp", "test6.cpp"};
+    vector<string> fileNames = {"test-corpus/test1.cpp", "test-corpus/test2.cpp", "test-corpus/test3.cpp", "test-corpus/test4.cpp", "test-corpus/test5.cpp", "test-corpus/test6.cpp"};
     int k = 3;
     vector<unordered_set<unsigned long>> allHashes;
     for (auto& fn : fileNames) {

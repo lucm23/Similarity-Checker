@@ -1,0 +1,19 @@
+Tokens for test1.cpp:
+int main ( ) { int var1 = 5 ; int var2 = 10 ; int var3 = var1 + var2 ; return 0 ; } 
+Tokens for test2.cpp:
+int main ( ) { int var4 = 5 ; int var5 = 10 ; int var6 = var4 + var5 ; return 0 ; } 
+Tokens for test3.cpp:
+int main ( ) { int var1 = 5 ; int var2 = 10 ; int var8 = var1 + var2 ; return 0 ; } 
+Tokens for test4.cpp:
+int main ( ) { float var1 = 5.0 ; float var2 = 10.0 ; float var9 = var1 + var2 ; return 0 ; } 
+Tokens for test5.cpp:
+int main ( ) { int var4 = 10 ; for ( int var10 = 0 ; var10 < var4 ; var10 ++ ) { cout < < var10 < < endl ; } return 0 ; } 
+Tokens for test6.cpp:
+int main ( ) { int var1 = 5 ; int var2 = 10 ; int var3 = var1 + var2 ; return 0 ; } 
+	test1.cpp test2.cpp test3.cpp test4.cpp test5.cpp test6.cpp 
+test1.cpp 1.00 0.30 0.78 0.26 0.13 1.00 
+test2.cpp 0.30 1.00 0.30 0.14 0.18 0.30 
+test3.cpp 0.78 0.30 1.00 0.26 0.13 0.78 
+test4.cpp 0.26 0.14 0.26 1.00 0.09 0.26 
+test5.cpp 0.13 0.18 0.13 0.09 1.00 0.13 
+test6.cpp 1.00 0.30 0.78 0.26 0.13 1.00 

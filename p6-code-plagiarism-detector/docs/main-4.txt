@@ -1,0 +1,19 @@
+int main() {
+    vector<string> fileNames = {"test1.cpp", "test2.cpp", "test3.cpp", "test4.cpp", "test5.cpp", "test6.cpp"};
+    int k = 3;
+    vector<unordered_set<unsigned long>> allHashes;
+    for (auto& fn : fileNames) {
+        ifstream in(fn);
+        if (!in) { cerr << "Cannot open " << fn << "\n"; continue; }
+        string code((istreambuf_iterator<char>(in)), {});
+        string clean = normalizeSpacesAndLines(code);
+        clean = removeComments(clean);
+        clean = normalizeVariables(clean);
+        auto tok = tokenize(clean);
+        cout << "Tokens for " << fn << ":\n";
+        for (auto& t : tok) cout << t << " "; cout << "\n";
+        allHashes.push_back(hashKGrams(createKGrams(tok, k)));
+    }
+    printSimilarityMatrix(allHashes, fileNames);
+    return 0;
+}
